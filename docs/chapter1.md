@@ -59,6 +59,9 @@ Figure 3: Editing Server Name In Group Policy
 
 Both the LME-WEC-Server and LME-WEC-Client GPOs include a wildcard filter allowing any IP address to connect to the WinRM service, We strongly recommend that this is restricted to specific IP addresses or ranges.
 
+The filter setting is located at "Computer Configuration/Policies/Administrative Templates/Windows Components/Windows Remote Management (WinRM)/WinRM Service/allow remote server management through WinRM"
+
+
 ### 1.3.2 Windows Collector Box Steps
 
 1. Copy the [lme_wec_config.xml](/Chapter%201%20Files/lme_wec_config.xml) file to the windows event collector server.
