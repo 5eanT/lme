@@ -7,10 +7,10 @@ You can find basic troubleshooting steps in the [Troubleshooting Guide](troubles
 When reporting an issue or suggesting improvements, it is important to include the versions of all the components, where possible. This ensures that the issue has not already been fixed! 
 
 ### Windows Server
-* Operating System: Press CTRL+R and type ```winver```
+* Operating System: Press "Windows Key"+R and type ```winver```
 * WEC Config: Open EventViewer > Subscriptions > "LME" > Description should contain version number
 * Winlogbeat Config: At the top of the file C:\Program Files\lme\winlogbeat.yml there should be a version number.
-* Winlogbeat.exe version: Press CTRL+R and type ```"C:\Program Files\lme\winlogbeat.exe" version```
+* Winlogbeat.exe version: Press "Windows Key"+R and type ```"C:\Program Files\lme\winlogbeat.exe" version```
 * Sysmon config: From either the top of the file or look at the status dashboard
 * Sysmon executable: Either run sysmon.exe or look at the status dashboard
 
@@ -20,7 +20,6 @@ When reporting an issue or suggesting improvements, it is important to include t
 * Docker: on the Linux server type ```docker --version```
 * Linux: on the Linux server type ```cat /etc/os-release```
 * Logstash config: on the Linux server type ```sudo docker config inspect logstash.conf --pretty```
-* Nginx config: on the Linux server type ```sudo docker config inspect nginx.conf --pretty```
 
 
 
@@ -64,7 +63,6 @@ If applicable, add screenshots to help explain your problem.
  - Docker: [e.g. Docker version 18.09.3]
  - Linux: [e.g. PRETTY_NAME="Ubuntu 18.04.2 LTS"]
  - Logstash Version [e.g. #LME logstash config V0.1]
- - Nginx config [e.g. #LME nginx config V0.1]
 
 **Additional context**
 Add any other context about the problem here.
